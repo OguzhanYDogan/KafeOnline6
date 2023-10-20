@@ -63,14 +63,23 @@
             // 
             // dgvSiparisler
             // 
+            dgvSiparisler.AllowUserToAddRows = false;
+            dgvSiparisler.AllowUserToDeleteRows = false;
             dgvSiparisler.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvSiparisler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvSiparisler.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgvSiparisler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSiparisler.Location = new Point(12, 50);
+            dgvSiparisler.MultiSelect = false;
             dgvSiparisler.Name = "dgvSiparisler";
+            dgvSiparisler.ReadOnly = true;
+            dgvSiparisler.RowHeadersVisible = false;
             dgvSiparisler.RowHeadersWidth = 62;
             dgvSiparisler.RowTemplate.Height = 33;
+            dgvSiparisler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvSiparisler.Size = new Size(853, 307);
             dgvSiparisler.TabIndex = 1;
+            dgvSiparisler.SelectionChanged += dgvSiparisler_SelectionChanged;
             // 
             // label1
             // 
@@ -84,12 +93,20 @@
             // 
             // dgvSiparisDetaylar
             // 
+            dgvSiparisDetaylar.AllowUserToAddRows = false;
+            dgvSiparisDetaylar.AllowUserToDeleteRows = false;
             dgvSiparisDetaylar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvSiparisDetaylar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvSiparisDetaylar.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgvSiparisDetaylar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSiparisDetaylar.Location = new Point(12, 49);
+            dgvSiparisDetaylar.MultiSelect = false;
             dgvSiparisDetaylar.Name = "dgvSiparisDetaylar";
+            dgvSiparisDetaylar.ReadOnly = true;
+            dgvSiparisDetaylar.RowHeadersVisible = false;
             dgvSiparisDetaylar.RowHeadersWidth = 62;
             dgvSiparisDetaylar.RowTemplate.Height = 33;
+            dgvSiparisDetaylar.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvSiparisDetaylar.Size = new Size(853, 311);
             dgvSiparisDetaylar.TabIndex = 2;
             // 
